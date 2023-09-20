@@ -11,7 +11,6 @@ int interactive(info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
-
 /**
  * is_delim - Check if a character is a delimiter.
  *
@@ -27,7 +26,6 @@ int is_delim(char c, char *delim)
 			return (1);
 	return (0);
 }
-
 /**
  * _isalpha - Check if a character is alphabetic.
  *
@@ -42,7 +40,6 @@ int _isalpha(int c)
 	else
 		return (0);
 }
-
 /**
  * _atoi - Convert a string to an integer.
  *
