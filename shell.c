@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "shell.h"
 
 /**
  * main - Entry point of the program.
@@ -8,7 +8,8 @@
 int main()
 {
 	const char *str = "/bin/ls"
-		for (int i = 0; str[i] != '\0'; i++)
+	int i;
+		for (i = 0; str[i] != '\0'; i++)
 		{
 			putchar(str[i]);
 		}
