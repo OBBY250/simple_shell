@@ -19,7 +19,6 @@ void _eputs(char *str)
 		i++;
 	}
 }
-
 /**
  * _eputchar - Write a character to stderr.
  *
@@ -45,6 +44,7 @@ int _eputchar(char c)
 
 /**
  * _putfd - Write a character to the given file descriptor.
+ *
  * @c: The character to print.
  * @fd: The file descriptor to write to.
  *
@@ -68,6 +68,7 @@ int _putfd(char c, int fd)
 
 /**
  * _putsfd - Print a string to the given file descriptor.
+ *
  * @str: The string to be printed.
  * @fd: The file descriptor to write to.
  *
@@ -85,4 +86,3 @@ int _putsfd(char *str, int fd)
 	}
 	return (i);
 }
-

@@ -2,6 +2,7 @@
 
 /**
  * _myenv - Print the current environment variables.
+ *
  * @info: Pointer to the information structure.
  *
  * Return: Always 0.
@@ -15,6 +16,7 @@ int _myenv(info_t *info)
 
 /**
  * _getenv - Get the value of an environment variable.
+ *
  * @info: Pointer to the information structure.
  * @name: Name of the environment variable.
  *
@@ -39,6 +41,7 @@ char *_getenv(info_t *info, const char *name)
 /**
  * _mysetenv - Initialize a new environment variable
  * or modify an existing one.
+ *
  * @info: Pointer to the information structure.
  *
  * Return: Always 0.
@@ -58,6 +61,7 @@ int _mysetenv(info_t *info)
 
 /**
  * _myunsetenv - Remove an environment variable.
+ *
  * @info: Pointer to the information structure.
  *
  * Return: Always 0.
@@ -71,7 +75,6 @@ int _myunsetenv(info_t *info)
 		_eputs("Too few arguments.\n");
 		return (1);
 	}
-
 	for (i = 1; i <= info->argc; i++)
 		_unsetenv(info, info->argv[i]);
 
@@ -80,6 +83,7 @@ int _myunsetenv(info_t *info)
 
 /**
  * populate_env_list - Populate the environment linked list.
+ *
  * @info: Pointer to the information structure.
  *
  * Return: Always 0.
@@ -95,4 +99,3 @@ int populate_env_list(info_t *info)
 
 	return (0);
 }
-
