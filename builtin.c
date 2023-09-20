@@ -30,7 +30,6 @@ int _myexit(info_t *info)
 
 	return (-2);
 }
-
 /**
  * _mycd - Change the current directory.
  *
@@ -81,7 +80,6 @@ int _mycd(info_t *info)
 	}
 	return (0);
 }
-
 /**
  * _myhelp - Display help information `not yet implemented`.
  *
