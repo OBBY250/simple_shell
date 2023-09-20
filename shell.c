@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	const char *str = "/bin/ls"
 	int i;
@@ -14,5 +14,5 @@ int main()
 			putchar(str[i]);
 		}
 	putchar('\n');
-	return 0;
+	return (0);
 }
